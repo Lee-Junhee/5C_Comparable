@@ -7,8 +7,10 @@ public class Point implements Comparable{
     
     public int compareTo( Object otherObj){
 	Point otherPoint = (Point) otherObj;
-	return Integer(Math.pow(xcor, 2) + Math.pow(ycor, 2)).compareTo(
-	Integer(Math.pow(otherObj.xcor, 2) + Math.pow(otherObj.ycor, 2)));
+	return Double.valueOf( Math.pow(xcor, 2)
+			     + Math.pow(ycor, 2)).compareTo(
+	    Double.valueOf( Math.pow(otherPoint.xcor, 2)
+		          + Math.pow(otherPoint.ycor, 2)));
     }
 
     // -------- previously-written code ----------
