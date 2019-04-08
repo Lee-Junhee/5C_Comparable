@@ -35,8 +35,8 @@ public class UserOfComparability {
      */
     private static void reportRelationship 
       ( String description
-      , Point a
-      , Point b
+      , Comparable a
+      , Comparable b
       , String expect
       ) {
         System.out.println( description);
